@@ -1,0 +1,636 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roshan Giri — Aerospace Engineering &amp; Visual Design Portfolio</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <!-- Google Fonts fallbacks -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@400;600&family=Unbounded:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <!-- Navigation -->
+      <nav class="site-nav" aria-label="Primary navigation">
+        <div class="nav-tabs">
+          <button class="active" aria-current="true" data-nav="home" type="button">Home</button>
+          <button data-nav="projects" type="button">Work</button>
+          <button data-nav="contact" type="button">Contact</button>
+        </div>
+        <button class="cv-button" data-jump="contact" type="button">
+          <span>View My CV</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.75"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
+            <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+            <path d="M10 9H8" />
+            <path d="M16 13H8" />
+            <path d="M16 17H8" />
+          </svg>
+        </button>
+      </nav>
+
+      <!-- Hero Section -->
+      <section class="stack-section hero" data-stack="home" id="home">
+        <div class="hero-copy">
+          <p class="hello">Hello, I,m</p>
+          <h1>
+            <span class="hero-word hero-word--ink">
+              <span>Roshan</span>
+            </span> <span class="hero-word">
+              <span>Giri</span>
+            </span>
+          </h1>
+          <div class="title-line">
+            <i></i>
+            <p>Aerospace Engineering Student</p>
+          </div>
+          <p class="hero-description">
+            An aerospace engineering student looking for internships and early-career roles —
+            bringing an engineer's precision to every part and a designer's eye to every pixel.
+          </p>
+          <div class="hero-actions">
+            <button
+              class="action-button action-button--solid"
+              data-jump="aerospace"
+              type="button"
+            >
+              <span>Explore My Work</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.75"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M7 7h10v10" />
+                <path d="M7 17 17 7" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <img class="portrait" src="assets/d2d59.png" alt="Portrait of Roshan Giri" />
+      </section>
+
+      <!-- Service 1: Aerospace Engineering -->
+      <section
+        class="stack-section service-section service-section--blue"
+        data-stack="aerospace"
+        id="aerospace"
+        style="--steps: 4"
+      >
+        <div class="pin">
+          <div class="service-grid">
+            <div class="service-intro" data-reveal>
+              <h2>Built to <span>fly</span></h2>
+              <p>
+                In my aerospace studies I model, test and refine components from first sketch to
+                final simulation — and I'm ready to bring that rigour to a real engineering team.
+              </p>
+              <div class="service-cta service-cta--top">
+                <button
+                  class="action-button action-button--light"
+                  data-jump="projects"
+                  type="button"
+                >
+                  <span>See Engineering Work</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.75"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="service-media" data-reveal style="--d: 120ms">
+              <span class="accent-square"></span>
+              <div class="service-media-frame">
+                <img
+                  alt="Engineer reviewing a 3D CAD model on a monitor"
+                  decoding="async"
+                  src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=1400&q=80"
+                  style="opacity: 1; transform: scale(1)"
+                />
+                <img
+                  alt="Aircraft wing slicing through a layer of clouds"
+                  decoding="async"
+                  src="https://images.unsplash.com/photo-1605590427165-3884d6aa6731?auto=format&fit=crop&w=1400&q=80"
+                  style="opacity: 0; transform: scale(1.08)"
+                />
+                <img
+                  alt="Close-up of an airliner turbofan engine"
+                  decoding="async"
+                  src="https://images.unsplash.com/photo-1540575861501-7cf05a4b125a?auto=format&fit=crop&w=1400&q=80"
+                  style="opacity: 0; transform: scale(1.08)"
+                />
+                <img
+                  alt="A blended-wing aircraft concept flying above the clouds"
+                  decoding="async"
+                  src="assets/6272d.png"
+                  style="opacity: 0; transform: scale(1.08)"
+                />
+                <div class="service-caption" aria-live="polite">
+                  <span>01 / 04</span>
+                  <p>Parametric models built for analysis from day one.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="service-detail" data-reveal style="--d: 220ms">
+              <h3>
+                <span>Aerospace</span>
+                <span>Engineering</span>
+              </h3>
+              <span class="detail-rule"><i></i></span>
+              <ul>
+                <li>
+                  <button class="is-active" aria-current="step" data-step="0" type="button">
+                    CAD &amp; CAE Modelling
+                  </button>
+                </li>
+                <li>
+                  <button data-step="1" type="button">Flow Simulation</button>
+                </li>
+                <li>
+                  <button data-step="2" type="button">Technical Research</button>
+                </li>
+                <li>
+                  <button data-step="3" type="button">Concept Design</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="service-cta service-cta--bottom">
+            <button
+              class="action-button action-button--light"
+              data-jump="projects"
+              type="button"
+            >
+              <span>See Engineering Work</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.75"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path
+                  d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <div class="tool-strip">
+            <span>My toolkit</span>
+            <div class="tool-dots" aria-label="Tools used">
+              <span>SolidWorks</span>
+              <span>ANSYS</span>
+              <span>MATLAB</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Service 2: Visual Design -->
+      <section
+        class="stack-section service-section service-section--light"
+        data-stack="visual"
+        id="visual"
+        style="--steps: 4"
+      >
+        <div class="pin">
+          <div class="service-grid">
+            <div class="service-intro" data-reveal>
+              <h2>Designed to <span>land</span></h2>
+              <p>
+                Alongside my degree I design brands, interfaces and pitch decks that make complex
+                ideas feel simple — a second skill set I bring to every team I join.
+              </p>
+              <div class="service-cta service-cta--top">
+                <button
+                  class="action-button action-button--solid"
+                  data-jump="projects"
+                  type="button"
+                >
+                  <span>See Design Work</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.75"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="m12 19 7-7 3 3-7 7-3-3z" />
+                    <path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" />
+                    <path d="m2 2 7.586 7.586" />
+                    <circle cx="11" cy="11" r="2" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="service-media" data-reveal style="--d: 120ms">
+              <span class="accent-square"></span>
+              <div class="service-media-frame">
+                <img
+                  alt="Hand-drawn wireframe sketches of web layouts"
+                  decoding="async"
+                  src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&w=1400&q=80"
+                  style="opacity: 1; transform: scale(1)"
+                />
+                <img
+                  alt="Branded cards laid out on a table"
+                  decoding="async"
+                  src="https://images.unsplash.com/photo-1763705857736-2b4f16a33758?auto=format&fit=crop&w=1400&q=80"
+                  style="opacity: 0; transform: scale(1.08)"
+                />
+                <img
+                  alt="Designer sketching on a tablet beside open books"
+                  decoding="async"
+                  src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&fit=crop&w=1400&q=80"
+                  style="opacity: 0; transform: scale(1.08)"
+                />
+                <img
+                  alt="Presentation slides open on a laptop"
+                  decoding="async"
+                  src="https://images.unsplash.com/photo-1590098563734-bcea80ce34c7?auto=format&fit=crop&w=1400&q=80"
+                  style="opacity: 0; transform: scale(1.08)"
+                />
+                <div class="service-caption" aria-live="polite">
+                  <span>01 / 04</span>
+                  <p>Flows and interfaces people understand at a glance.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="service-detail" data-reveal style="--d: 220ms">
+              <h3>
+                <span>Visual</span>
+                <span>Design</span>
+              </h3>
+              <span class="detail-rule"><i></i></span>
+              <ul>
+                <li>
+                  <button class="is-active" aria-current="step" data-step="0" type="button">
+                    UI/UX Design
+                  </button>
+                </li>
+                <li>
+                  <button data-step="1" type="button">Brand Identity</button>
+                </li>
+                <li>
+                  <button data-step="2" type="button">Graphic Design</button>
+                </li>
+                <li>
+                  <button data-step="3" type="button">Pitch Decks</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="service-cta service-cta--bottom">
+            <button
+              class="action-button action-button--solid"
+              data-jump="projects"
+              type="button"
+            >
+              <span>See Design Work</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.75"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="m12 19 7-7 3 3-7 7-3-3z" />
+                <path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" />
+                <path d="m2 2 7.586 7.586" />
+                <circle cx="11" cy="11" r="2" />
+              </svg>
+            </button>
+          </div>
+
+          <div class="tool-strip">
+            <span>My toolkit</span>
+            <div class="tool-dots" aria-label="Tools used">
+              <span>Figma</span>
+              <span>Illustrator</span>
+              <span>Photoshop</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section class="stack-section projects" data-stack="projects" id="projects">
+        <div class="pin">
+          <div class="projects-heading" data-reveal>
+            <div>
+              <h2>Projects worth bragging about</h2>
+              <p>
+                Coursework, competition entries and personal projects I've designed, simulated and
+                shipped — keep scrolling to fly through them.
+              </p>
+            </div>
+            <div class="projects-progress" aria-hidden="true">
+              <span>
+                <span class="projects-current">01</span>
+                <small> / 07</small>
+              </span>
+              <i><b></b></i>
+            </div>
+          </div>
+
+          <div class="project-track">
+            <div class="project-rail">
+              <!-- Card 1 -->
+              <article class="project-card">
+                <img alt="Blended-wing aircraft above the clouds" decoding="async" src="assets/6272d.png" />
+                <span class="project-index">01</span>
+                <div class="project-label">
+                  <h3>Blended-Wing Concept</h3>
+                  <p>Aerodynamics · CAD</p>
+                </div>
+              </article>
+              <!-- Card 2 -->
+              <article class="project-card">
+                <img
+                  alt="Large jet engine on an airport apron"
+                  decoding="async"
+                  src="https://images.unsplash.com/photo-1696238628662-e820babaf1e3?auto=format&fit=crop&w=900&q=80"
+                />
+                <span class="project-index">02</span>
+                <div class="project-label">
+                  <h3>Turbofan Inlet Study</h3>
+                  <p>Propulsion · CFD</p>
+                </div>
+              </article>
+              <!-- Card 3 -->
+              <article class="project-card">
+                <img
+                  alt="Drone flying against the sky"
+                  decoding="async"
+                  src="https://images.unsplash.com/photo-1473968512647-3e447244af8f?auto=format&fit=crop&w=900&q=80"
+                />
+                <span class="project-index">03</span>
+                <div class="project-label">
+                  <h3>Survey UAV Airframe</h3>
+                  <p>Structures · SolidWorks</p>
+                </div>
+              </article>
+              <!-- Card 4 -->
+              <article class="project-card">
+                <img
+                  alt="Rocket lifting off from the launch pad"
+                  decoding="async"
+                  src="https://images.unsplash.com/photo-1517976487492-5750f3195933?auto=format&fit=crop&w=900&q=80"
+                />
+                <span class="project-index">04</span>
+                <div class="project-label">
+                  <h3>Sounding Rocket Nozzle</h3>
+                  <p>Propulsion · MATLAB</p>
+                </div>
+              </article>
+              <!-- Card 5 -->
+              <article class="project-card">
+                <img
+                  alt="Design workspace with aviation campaign artwork"
+                  decoding="async"
+                  src="assets/8f103.png"
+                />
+                <span class="project-index">05</span>
+                <div class="project-label">
+                  <h3>Higher Tomorrow Campaign</h3>
+                  <p>Brand · Campaign</p>
+                </div>
+              </article>
+              <!-- Card 6 -->
+              <article class="project-card">
+                <img
+                  alt="Mobile app interface screens"
+                  decoding="async"
+                  src="https://images.unsplash.com/photo-1767449441925-737379bc2c4d?auto=format&fit=crop&w=900&q=80"
+                />
+                <span class="project-index">06</span>
+                <div class="project-label">
+                  <h3>Flight Companion App</h3>
+                  <p>UI/UX · Figma</p>
+                </div>
+              </article>
+              <!-- Card 7 -->
+              <article class="project-card">
+                <img
+                  alt="Laptop showing presentation slides"
+                  decoding="async"
+                  src="https://images.unsplash.com/photo-1590098563176-07884b06d7f7?auto=format&fit=crop&w=900&q=80"
+                />
+                <span class="project-index">07</span>
+                <div class="project-label">
+                  <h3>Aero Startup Pitch Deck</h3>
+                  <p>Pitch Deck · Storytelling</p>
+                </div>
+              </article>
+              <!-- Card CTA -->
+              <div class="project-card project-card--cta">
+                <p>Your team could be next.</p>
+                <button
+                  class="action-button action-button--light"
+                  data-jump="contact"
+                  type="button"
+                >
+                  <span>Let's Work Together</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.75"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M14 9a2 2 0 0 1-2 2H6l-4 4V4c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2z"
+                    />
+                    <path
+                      d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About & Contact Section -->
+      <section class="stack-section about-contact" data-stack="about" id="about">
+        <div class="about-contact-body">
+          <div class="about">
+            <h2>
+              <span class="about-line" data-reveal>
+                <span class="about-word">Engineer</span>
+                <!-- Pixel Art Cloud Mark -->
+                <svg aria-hidden="true" class="cloud-mark" viewBox="0 0 16 16">
+                  <defs>
+                    <clipPath id="cloud-clip">
+                      <rect height="16" width="16" />
+                    </clipPath>
+                  </defs>
+                  <g clip-path="url(#cloud-clip)">
+                    <rect fill="#2a56fb" height="16" width="16" />
+                    <g class="cloud-far">
+                      <path d="M-15 3h4v1h-4zM-6 8h5v1h-5zM-12 14h4v1h-4zM1 3h4v1h-4zM10 8h5v1h-5zM4 14h4v1h-4zM17 3h4v1h-4zM26 8h5v1h-5zM20 14h4v1h-4z" fill="#5c7ffb" />
+                      <path d="M-14 1h2v1h-2zM-15 2h4v1h-4zM-5 5h2v1h-2zM-6 6h5v1h-5zM-7 7h7v1h-7zM-11 12h2v1h-2zM-12 13h4v1h-4zM2 1h2v1h-2zM1 2h4v1h-4zM11 5h2v1h-2zM10 6h5v1h-5zM9 7h7v1h-7zM5 12h2v1h-2zM4 13h4v1h-4zM18 1h2v1h-2zM17 2h4v1h-4zM27 5h2v1h-2zM26 6h5v1h-5zM25 7h7v1h-7zM21 12h2v1h-2zM20 13h4v1h-4z" fill="#6f8ffc" />
+                    </g>
+                    <g class="cloud-mid">
+                      <path d="M-5 3h5v1h-5zM-14 10h5v1h-5zM11 3h5v1h-5zM2 10h5v1h-5zM27 3h5v1h-5zM18 10h5v1h-5z" fill="#9fb3fd" />
+                      <path d="M-4 0h2v1h-2zM-5 1h5v1h-5zM-6 2h7v1h-7zM-13 7h2v1h-2zM-14 8h5v1h-5zM-15 9h7v1h-7zM12 0h2v1h-2zM11 1h5v1h-5zM10 2h7v1h-7zM3 7h2v1h-2zM2 8h5v1h-5zM1 9h7v1h-7zM28 0h2v1h-2zM27 1h5v1h-5zM26 2h7v1h-7zM19 7h2v1h-2zM18 8h5v1h-5zM17 9h7v1h-7z" fill="#c6d2fe" />
+                    </g>
+                    <g class="cloud-near">
+                      <path d="M-9 14h7v1h-7zM-3 6h4v1h-4zM7 14h7v1h-7zM13 6h4v1h-4zM23 14h7v1h-7zM29 6h4v1h-4z" fill="#c6d2fe" />
+                      <path d="M-8 10h3v1h-3zM-9 11h6v1h-6zM-10 12h9v1h-9zM-10 13h9v1h-9zM-2 4h2v1h-2zM-3 5h4v1h-4zM8 10h3v1h-3zM7 11h6v1h-6zM6 12h9v1h-9zM6 13h9v1h-9zM14 4h2v1h-2zM13 5h4v1h-4zM24 10h3v1h-3zM23 11h6v1h-6zM22 12h9v1h-9zM22 13h9v1h-9zM30 4h2v1h-2zM29 5h4v1h-4z" fill="#ffffff" />
+                    </g>
+                  </g>
+                </svg>
+                <span class="about-word">Designer</span>
+              </span>
+              <span class="about-sub" data-reveal="self" style="--d: 330ms">
+                and everything in between
+              </span>
+            </h2>
+            <p data-reveal="self">
+              I'm an aerospace engineering student based in Nepal who never stopped sketching. My
+              work lives where analysis meets aesthetics — I run simulations to understand how things
+              behave, then design how they should look and feel. Now I'm looking for an internship or
+              graduate role where I can learn fast and add a little lift from day one.
+            </p>
+          </div>
+
+          <div class="contact" id="contact">
+            <div class="contact-main" data-reveal>
+              <h2>Have an opportunity that needs <span>lift-off?</span></h2>
+              <form id="contact-form">
+                <input aria-label="Your message" placeholder="Write your message…" required />
+                <button type="submit">
+                  <span>Send</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.75"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"
+                    />
+                    <path d="m21.854 2.147-10.94 10.94" />
+                  </svg>
+                </button>
+              </form>
+              <p class="form-note" aria-live="polite">
+                Opens your email app — internships, projects and good jokes welcome.
+              </p>
+            </div>
+
+            <div class="footer-links" data-reveal style="--d: 120ms">
+              <div>
+                <h3>Explore</h3>
+                <a href="#aerospace" data-jump="aerospace">Engineering</a>
+                <a href="#visual" data-jump="visual">Design</a>
+                <a href="#projects" data-jump="projects">Selected Work</a>
+              </div>
+              <div>
+                <h3>Navigate</h3>
+                <a href="#home" data-jump="home">Home</a>
+                <a href="#about" data-jump="about">About Me</a>
+                <a href="#contact" data-jump="contact">Contact</a>
+              </div>
+              <div>
+                <h3>Say Hello</h3>
+                <a href="mailto:hello@roshangiri.com">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <rect width="20" height="16" x="2" y="4" rx="2" />
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                  </svg>
+                  Email me
+                </a>
+                <span>Remote or on-site</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bar"></div>
+      </section>
+    </main>
+  </body>
+</html>
