@@ -1,0 +1,10 @@
+{
+  "description": "A website with a balanced, cohesive blue, yellow, and black color palette that creates a more consistent and polished visual experience.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
