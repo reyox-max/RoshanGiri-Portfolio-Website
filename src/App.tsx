@@ -11,7 +11,7 @@ import {
 } from "react";
 import {
   ArrowUpRight,
-  FileText,
+  FileUser,
   Mail,
   MessagesSquare,
   PenTool,
@@ -747,25 +747,25 @@ export default function App() {
 
   return (
     <main>
-        <nav className="site-nav" aria-label="Primary navigation">
-          <div className="nav-tabs">
-            {navItems.map(([id, label]) => (
-              <button
-                aria-current={navActive === id ? "true" : undefined}
-                className={navActive === id ? "active" : ""}
-                key={id}
-                onClick={() => goTo(id)}
-                type="button"
-              >
-                {label}
-              </button>
-            ))}
-          </div>
+      <nav className="site-nav" aria-label="Primary navigation">
+        <div className="nav-tabs">
+          {navItems.map(([id, label]) => (
+            <button
+              aria-current={navActive === id ? "true" : undefined}
+              className={navActive === id ? "active" : ""}
+              key={id}
+              onClick={() => goTo(id)}
+              type="button"
+            >
+              {label}
+            </button>
+          ))}
+        </div>
         <button className="cv-button" onClick={() => goTo("contact")} type="button">
           <span>View My CV</span>
-          <FileText aria-hidden size={16} strokeWidth={ICON_STROKE} />
+          <FileUser aria-hidden size={16} strokeWidth={ICON_STROKE} />
         </button>
-        </nav>
+      </nav>
 
         <section className="stack-section hero" data-reveal="hero" data-stack="home" id="home">
           <div className="hero-copy">
