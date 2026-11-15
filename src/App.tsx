@@ -30,9 +30,9 @@ const unsplash = (id: string, w = 1400) =>
   `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${w}&q=80`;
 
 const assets = {
-  portrait: "/assets/d2d59.png",
-  aerospace: "/assets/6272d.png",
-  visual: "/assets/8f103.png",
+  portrait: "./assets/d2d59.png",
+  aerospace: "./assets/6272d.png",
+  visual: "./assets/8f103.png",
 };
 
 const services = [
