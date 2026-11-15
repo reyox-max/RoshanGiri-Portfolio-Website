@@ -102,12 +102,17 @@
   }
 
   function pinProgress(section) {
-    const range = section.offsetHeight - window.innerHeight;
+    const range = pinRange(section);
     if (range <= 0) return 0;
     const progress = clamp01((window.scrollY - sectionOffset(section.id)) / range);
     if (progress <= 0.001) return 0;
     if (progress >= 0.999) return 1;
     return progress;
+  }
+
+  function pinRange(section) {
+    const pin = section.querySelector(".pin");
+    return Math.max(0, section.offsetHeight - (pin?.offsetHeight ?? window.innerHeight));
   }
 
   // Hero entrance animation once fonts are ready
@@ -435,7 +440,7 @@
 
       stepBtns.forEach((btn, i) => {
         btn.addEventListener("click", () => {
-          const range = section.offsetHeight - window.innerHeight;
+          const range = pinRange(section);
           const targetY = sectionOffset(id) + (count > 1 ? i / (count - 1) : 0) * range;
           window.scrollTo({ top: targetY, behavior: "smooth" });
         });
@@ -448,14 +453,15 @@
     const section = document.getElementById("projects");
     if (!section) return;
     const track = section.querySelector(".project-track");
+    const pin = section.querySelector(".pin");
     const progressSpan = section.querySelector(".projects-current");
     const totalProjects = 7;
     let distance = 0;
 
     const measure = () => {
-      if (!track) return;
+      if (!track || !pin) return;
       distance = Math.max(0, track.scrollWidth - track.clientWidth);
-      section.style.height = `${window.innerHeight + distance}px`;
+      section.style.height = `${pin.offsetHeight + distance}px`;
     };
 
     let measureFrame = 0;
